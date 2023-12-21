@@ -162,7 +162,8 @@ int main() // Ponto de partida para a execução do programa / Inicío da chamada d
     	printf("Escolha a opçao desejada do menu:\n\n");
     	printf("\t1 - Registrar nomes\n");
     	printf("\t2 - Consultar nomes\n");
-    	printf("\t3 - Deletar nomes\n\n");
+    	printf("\t3 - Deletar nomes\n");
+    	printf("\t4 - Sair do sistema\n\n");
     	printf("Opção:"); // Fim do menu
 	
     	scanf("%d", & opcao); // Armazenando a escolha do usuário
@@ -182,7 +183,12 @@ int main() // Ponto de partida para a execução do programa / Inicío da chamada d
     		case 3:
     		deletar(); // Chamada da função DELETAR
     		break;
-		
+    		
+    		case 4:
+    		printf("\nObrigado por utilizar o sistema!\n");
+    		return 0;
+    		break;
+	
     		default: // Opção que não existe no MENU
     		printf("Essa opção não está disponível\n\n"); // Avisa na tela do usuário que a oção nao existe
     		system("pause"); // Pausa a tela ao invés de retornar automáticamente
